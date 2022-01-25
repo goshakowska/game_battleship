@@ -210,6 +210,9 @@ class HumanPlayer(Player):
                 return coordinates
 
     def arrange_ships_on_board(self, ship):
+        """
+        This method contains full proccess of ship placement.
+        """
         players_board = self.game_board()
         ships_size = naval_fleet.get(ship)
         coordinates = input_coordinate(players_board)
